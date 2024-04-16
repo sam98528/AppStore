@@ -9,14 +9,22 @@
 /* Begin PBXBuildFile section */
 		1401186A2BCCC4A900E1F588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140118692BCCC4A900E1F588 /* AppDelegate.swift */; };
 		1401186C2BCCC4A900E1F588 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401186B2BCCC4A900E1F588 /* SceneDelegate.swift */; };
-		1401186E2BCCC4A900E1F588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401186D2BCCC4A900E1F588 /* ViewController.swift */; };
-		140118712BCCC4A900E1F588 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 140118702BCCC4A900E1F588 /* Base */; };
+		1401186E2BCCC4A900E1F588 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401186D2BCCC4A900E1F588 /* TodayViewController.swift */; };
 		140118742BCCC4A900E1F588 /* AppStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 140118722BCCC4A900E1F588 /* AppStore.xcdatamodeld */; };
 		140118762BCCC4AA00E1F588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140118752BCCC4AA00E1F588 /* Assets.xcassets */; };
 		140118792BCCC4AA00E1F588 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 140118782BCCC4AA00E1F588 /* Base */; };
 		140118842BCCC4AA00E1F588 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140118832BCCC4AA00E1F588 /* AppStoreTests.swift */; };
 		1401188E2BCCC4AA00E1F588 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401188D2BCCC4AA00E1F588 /* AppStoreUITests.swift */; };
 		140118902BCCC4AA00E1F588 /* AppStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401188F2BCCC4AA00E1F588 /* AppStoreUITestsLaunchTests.swift */; };
+		1401189F2BCCDB6800E1F588 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401189E2BCCDB6800E1F588 /* App.swift */; };
+		1412F6D12BCE174A00404F78 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412F6D02BCE174A00404F78 /* TabController.swift */; };
+		147964052BCCEAA20062A2D3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 147964042BCCEAA20062A2D3 /* Alamofire */; };
+		147964072BCCEAB70062A2D3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 147964062BCCEAB70062A2D3 /* Kingfisher */; };
+		1479640A2BCCEAE20062A2D3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 147964092BCCEAE20062A2D3 /* SnapKit */; };
+		1479640C2BCCEE490062A2D3 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479640B2BCCEE490062A2D3 /* AppViewController.swift */; };
+		1479640E2BCCEE690062A2D3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479640D2BCCEE690062A2D3 /* GameViewController.swift */; };
+		147964102BCCEE760062A2D3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479640F2BCCEE760062A2D3 /* SearchViewController.swift */; };
+		14FB73822BCCF72700C840EE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB73812BCCF72700C840EE /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +48,7 @@
 		140118662BCCC4A900E1F588 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		140118692BCCC4A900E1F588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1401186B2BCCC4A900E1F588 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1401186D2BCCC4A900E1F588 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		140118702BCCC4A900E1F588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1401186D2BCCC4A900E1F588 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		140118732BCCC4A900E1F588 /* AppStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppStore.xcdatamodel; sourceTree = "<group>"; };
 		140118752BCCC4AA00E1F588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		140118782BCCC4AA00E1F588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,12 @@
 		140118892BCCC4AA00E1F588 /* AppStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1401188D2BCCC4AA00E1F588 /* AppStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
 		1401188F2BCCC4AA00E1F588 /* AppStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1401189E2BCCDB6800E1F588 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		1412F6D02BCE174A00404F78 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		1479640B2BCCEE490062A2D3 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		1479640D2BCCEE690062A2D3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1479640F2BCCEE760062A2D3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		14FB73812BCCF72700C840EE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1479640A2BCCEAE20062A2D3 /* SnapKit in Frameworks */,
+				147964072BCCEAB70062A2D3 /* Kingfisher in Frameworks */,
+				147964052BCCEAA20062A2D3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,14 +117,12 @@
 		140118682BCCC4A900E1F588 /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
-				140118692BCCC4A900E1F588 /* AppDelegate.swift */,
-				1401186B2BCCC4A900E1F588 /* SceneDelegate.swift */,
-				1401186D2BCCC4A900E1F588 /* ViewController.swift */,
-				1401186F2BCCC4A900E1F588 /* Main.storyboard */,
-				140118752BCCC4AA00E1F588 /* Assets.xcassets */,
-				140118772BCCC4AA00E1F588 /* LaunchScreen.storyboard */,
+				1412F6CF2BCE11E400404F78 /* Supporting */,
+				14FB73802BCCF71400C840EE /* Utils */,
+				14FB737F2BCCF70900C840EE /* Resources */,
+				1401189D2BCCDA6100E1F588 /* Model */,
+				1401189C2BCCDA5900E1F588 /* ViewController */,
 				1401187A2BCCC4AA00E1F588 /* Info.plist */,
-				140118722BCCC4A900E1F588 /* AppStore.xcdatamodeld */,
 			);
 			path = AppStore;
 			sourceTree = "<group>";
@@ -130,6 +144,53 @@
 			path = AppStoreUITests;
 			sourceTree = "<group>";
 		};
+		1401189C2BCCDA5900E1F588 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				140118772BCCC4AA00E1F588 /* LaunchScreen.storyboard */,
+				1401186D2BCCC4A900E1F588 /* TodayViewController.swift */,
+				1479640B2BCCEE490062A2D3 /* AppViewController.swift */,
+				1479640D2BCCEE690062A2D3 /* GameViewController.swift */,
+				1479640F2BCCEE760062A2D3 /* SearchViewController.swift */,
+				1412F6D02BCE174A00404F78 /* TabController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1401189D2BCCDA6100E1F588 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1401189E2BCCDB6800E1F588 /* App.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1412F6CF2BCE11E400404F78 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				140118692BCCC4A900E1F588 /* AppDelegate.swift */,
+				1401186B2BCCC4A900E1F588 /* SceneDelegate.swift */,
+				140118752BCCC4AA00E1F588 /* Assets.xcassets */,
+				140118722BCCC4A900E1F588 /* AppStore.xcdatamodeld */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		14FB737F2BCCF70900C840EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14FB73802BCCF71400C840EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14FB73812BCCF72700C840EE /* Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +207,11 @@
 			dependencies = (
 			);
 			name = AppStore;
+			packageProductDependencies = (
+				147964042BCCEAA20062A2D3 /* Alamofire */,
+				147964062BCCEAB70062A2D3 /* Kingfisher */,
+				147964092BCCEAE20062A2D3 /* SnapKit */,
+			);
 			productName = AppStore;
 			productReference = 140118662BCCC4A900E1F588 /* AppStore.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +284,11 @@
 				Base,
 			);
 			mainGroup = 1401185D2BCCC4A900E1F588;
+			packageReferences = (
+				147964022BCCEA920062A2D3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				147964032BCCEAA20062A2D3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				147964082BCCEAE20062A2D3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 140118672BCCC4A900E1F588 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +307,6 @@
 			files = (
 				140118762BCCC4AA00E1F588 /* Assets.xcassets in Resources */,
 				140118792BCCC4AA00E1F588 /* Base in Resources */,
-				140118712BCCC4A900E1F588 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +331,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1401186E2BCCC4A900E1F588 /* ViewController.swift in Sources */,
+				1479640E2BCCEE690062A2D3 /* GameViewController.swift in Sources */,
+				1479640C2BCCEE490062A2D3 /* AppViewController.swift in Sources */,
+				147964102BCCEE760062A2D3 /* SearchViewController.swift in Sources */,
+				1401186E2BCCC4A900E1F588 /* TodayViewController.swift in Sources */,
 				1401186A2BCCC4A900E1F588 /* AppDelegate.swift in Sources */,
+				1412F6D12BCE174A00404F78 /* TabController.swift in Sources */,
 				1401186C2BCCC4A900E1F588 /* SceneDelegate.swift in Sources */,
+				1401189F2BCCDB6800E1F588 /* App.swift in Sources */,
+				14FB73822BCCF72700C840EE /* Extension.swift in Sources */,
 				140118742BCCC4A900E1F588 /* AppStore.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +377,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1401186F2BCCC4A900E1F588 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				140118702BCCC4A900E1F588 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		140118772BCCC4AA00E1F588 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -451,7 +519,6 @@
 				INFOPLIST_FILE = AppStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,7 +526,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Seungwon.AppStore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seungwon.UserDefaultsPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -479,7 +546,6 @@
 				INFOPLIST_FILE = AppStore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -487,7 +553,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Seungwon.AppStore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seungwon.UserDefaultsPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -611,6 +677,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		147964022BCCEA920062A2D3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+		147964032BCCEAA20062A2D3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		147964082BCCEAE20062A2D3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		147964042BCCEAA20062A2D3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 147964032BCCEAA20062A2D3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		147964062BCCEAB70062A2D3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 147964022BCCEA920062A2D3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		147964092BCCEAE20062A2D3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 147964082BCCEAE20062A2D3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		140118722BCCC4A900E1F588 /* AppStore.xcdatamodeld */ = {
