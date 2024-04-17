@@ -9,15 +9,6 @@ import Foundation
 import UIKit
 import SnapKit
 
-protocol Configurable {
-    func configure(withTitle title: String?)
-}
-
-extension Configurable where Self: UIViewController {
-    func configure(withTitle title: String?){
-        //self.view.backgroundColor = .systemBackground
-    }
-}
 
 extension  UINavigationController {
     

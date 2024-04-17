@@ -18,12 +18,18 @@
 		140118902BCCC4AA00E1F588 /* AppStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401188F2BCCC4AA00E1F588 /* AppStoreUITestsLaunchTests.swift */; };
 		1401189F2BCCDB6800E1F588 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401189E2BCCDB6800E1F588 /* App.swift */; };
 		1412F6D12BCE174A00404F78 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412F6D02BCE174A00404F78 /* TabController.swift */; };
+		1412F6D82BCE31F000404F78 /* SearchBigCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412F6D52BCE31F000404F78 /* SearchBigCell.swift */; };
+		1412F6DA2BCE371B00404F78 /* SearchBigCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1412F6D92BCE371B00404F78 /* SearchBigCell.xib */; };
 		147964052BCCEAA20062A2D3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 147964042BCCEAA20062A2D3 /* Alamofire */; };
 		147964072BCCEAB70062A2D3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 147964062BCCEAB70062A2D3 /* Kingfisher */; };
 		1479640A2BCCEAE20062A2D3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 147964092BCCEAE20062A2D3 /* SnapKit */; };
 		1479640C2BCCEE490062A2D3 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479640B2BCCEE490062A2D3 /* AppViewController.swift */; };
 		1479640E2BCCEE690062A2D3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479640D2BCCEE690062A2D3 /* GameViewController.swift */; };
 		147964102BCCEE760062A2D3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479640F2BCCEE760062A2D3 /* SearchViewController.swift */; };
+		14E7DF7C2BCF681000342411 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7DF7B2BCF681000342411 /* SearchModel.swift */; };
+		14E7DF7E2BCF696800342411 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7DF7D2BCF696800342411 /* SearchResult.swift */; };
+		14E7DF832BCF7C8F00342411 /* SearchSnapShotCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E7DF822BCF7C8F00342411 /* SearchSnapShotCollectionViewCell.xib */; };
+		14E7DF842BCF7C8F00342411 /* SearchSnapShotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7DF812BCF7C8F00342411 /* SearchSnapShotCollectionViewCell.swift */; };
 		14FB73822BCCF72700C840EE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FB73812BCCF72700C840EE /* Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,9 +66,15 @@
 		1401188F2BCCC4AA00E1F588 /* AppStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1401189E2BCCDB6800E1F588 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		1412F6D02BCE174A00404F78 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		1412F6D52BCE31F000404F78 /* SearchBigCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBigCell.swift; sourceTree = "<group>"; };
+		1412F6D92BCE371B00404F78 /* SearchBigCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBigCell.xib; sourceTree = "<group>"; };
 		1479640B2BCCEE490062A2D3 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		1479640D2BCCEE690062A2D3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		1479640F2BCCEE760062A2D3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		14E7DF7B2BCF681000342411 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		14E7DF7D2BCF696800342411 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		14E7DF812BCF7C8F00342411 /* SearchSnapShotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSnapShotCollectionViewCell.swift; sourceTree = "<group>"; };
+		14E7DF822BCF7C8F00342411 /* SearchSnapShotCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchSnapShotCollectionViewCell.xib; sourceTree = "<group>"; };
 		14FB73812BCCF72700C840EE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +159,7 @@
 		1401189C2BCCDA5900E1F588 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1412F6D42BCE2B0100404F78 /* Cell */,
 				140118772BCCC4AA00E1F588 /* LaunchScreen.storyboard */,
 				1401186D2BCCC4A900E1F588 /* TodayViewController.swift */,
 				1479640B2BCCEE490062A2D3 /* AppViewController.swift */,
@@ -161,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				1401189E2BCCDB6800E1F588 /* App.swift */,
+				14E7DF7B2BCF681000342411 /* SearchModel.swift */,
+				14E7DF7D2BCF696800342411 /* SearchResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +189,17 @@
 				140118722BCCC4A900E1F588 /* AppStore.xcdatamodeld */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		1412F6D42BCE2B0100404F78 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1412F6D52BCE31F000404F78 /* SearchBigCell.swift */,
+				1412F6D92BCE371B00404F78 /* SearchBigCell.xib */,
+				14E7DF812BCF7C8F00342411 /* SearchSnapShotCollectionViewCell.swift */,
+				14E7DF822BCF7C8F00342411 /* SearchSnapShotCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		14FB737F2BCCF70900C840EE /* Resources */ = {
@@ -305,7 +331,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1412F6DA2BCE371B00404F78 /* SearchBigCell.xib in Resources */,
 				140118762BCCC4AA00E1F588 /* Assets.xcassets in Resources */,
+				14E7DF832BCF7C8F00342411 /* SearchSnapShotCollectionViewCell.xib in Resources */,
 				140118792BCCC4AA00E1F588 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,12 +361,16 @@
 			files = (
 				1479640E2BCCEE690062A2D3 /* GameViewController.swift in Sources */,
 				1479640C2BCCEE490062A2D3 /* AppViewController.swift in Sources */,
+				14E7DF842BCF7C8F00342411 /* SearchSnapShotCollectionViewCell.swift in Sources */,
 				147964102BCCEE760062A2D3 /* SearchViewController.swift in Sources */,
 				1401186E2BCCC4A900E1F588 /* TodayViewController.swift in Sources */,
 				1401186A2BCCC4A900E1F588 /* AppDelegate.swift in Sources */,
 				1412F6D12BCE174A00404F78 /* TabController.swift in Sources */,
 				1401186C2BCCC4A900E1F588 /* SceneDelegate.swift in Sources */,
+				14E7DF7E2BCF696800342411 /* SearchResult.swift in Sources */,
+				14E7DF7C2BCF681000342411 /* SearchModel.swift in Sources */,
 				1401189F2BCCDB6800E1F588 /* App.swift in Sources */,
+				1412F6D82BCE31F000404F78 /* SearchBigCell.swift in Sources */,
 				14FB73822BCCF72700C840EE /* Extension.swift in Sources */,
 				140118742BCCC4A900E1F588 /* AppStore.xcdatamodeld in Sources */,
 			);

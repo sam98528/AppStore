@@ -7,12 +7,11 @@
 
 import UIKit
 
-class TodayViewController: UIViewController, Configurable {
+class TodayViewController: UIViewController{
     let scrollView = UIScrollView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure(withTitle: "투데이")
     }
     
 }

@@ -7,11 +7,10 @@
 
 import UIKit
 
-class AppViewController: UIViewController, Configurable {
+class AppViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure(withTitle: "앱")
     }
 
 }
