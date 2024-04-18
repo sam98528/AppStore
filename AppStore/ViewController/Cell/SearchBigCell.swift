@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 class SearchBigCell: UITableViewCell {
-
+    
     @IBOutlet weak var snapShotCollectionView: UICollectionView!
     @IBOutlet weak var genreLabel: UILabel!
     @IBOutlet weak var developerLabel: UILabel!
@@ -28,15 +28,16 @@ class SearchBigCell: UITableViewCell {
     
     override func prepareForReuse() {
         self.snapShotCollectionView.reloadData()
+        
     }
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     func collectionViewConfigure(){
@@ -55,23 +56,80 @@ class SearchBigCell: UITableViewCell {
     func configure(indexPath : IndexPath){
         self.data = SearchResult.data[indexPath.row]
         collectionViewConfigure()
-        self.iconImageView.clipsToBounds = true
-        let processor = RoundCornerImageProcessor(cornerRadius: 150)
-        self.iconImageView.kf.setImage(with: URL(string: data?.appIconImage ?? ""), options: [.processor(processor)])
-
+        //let processor = RoundCornerImageProcessor(cornerRadius: 150,backgroundColor: .clear)
+        self.iconImageView.kf.setImage(with: URL(string: data?.appIconImage ?? ""))
+        self.iconImageView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
+        self.iconImageView.layer.borderWidth = 1
+        self.iconImageView.layer.cornerRadius = 15
         self.titleLabel.text = data?.appTitle
         self.subTitleLabel.text = data?.primaryGenreName
         self.genreLabel.text = data?.primaryGenreName
-        self.ratingLabel.text = String(format: "%.2f", data?.averageUserRating ?? 0.0)
-        self.developerLabel.text = data?.artistName
+        
+        
+        
+        self.ratingLabel.attributedText = makeStarLabel(rating: data?.averageUserRating ?? 0.0, count: data?.userRatingCount ?? 0)
+        self.developerLabel.attributedText = makeDeveloperLabel(artistName: data?.artistName ?? "")
         self.downloadButton.layer.cornerRadius = self.downloadButton.bounds.height / 2
-        //self.snapShotCollectionView.reloadData()
+    }
+    
+    func makeStarLabel(rating : Double, count: Int) -> NSMutableAttributedString{
+        let attributeString = NSMutableAttributedString(string: "")
+        
+        // 별 이미지를 추가합니다.
+        let fullStarCount = Int(rating)
+        for _ in 0..<fullStarCount {
+            let imageAttachment = NSTextAttachment(image: UIImage(systemName: "star.fill")!)
+            imageAttachment.bounds = .init(x: 0, y: -2, width: 14, height: 14)
+            attributeString.append(NSAttributedString(attachment: imageAttachment))
+        }
+        
+        // 소수점 이하의 값을 반올림하여 추가합니다.
+        let remainingRating = rating - Double(fullStarCount)
+        if remainingRating > 0 {
+            let imageAttachment = NSTextAttachment(image: UIImage(systemName: "star.leadinghalf.fill")!)
+            imageAttachment.bounds = .init(x: 0, y: -2, width: 14, height: 14)
+            attributeString.append(NSAttributedString(attachment: imageAttachment))
+        }
+        
+        // 나머지 빈 별을 추가합니다.
+        let emptyStarCount = 5 - fullStarCount - (remainingRating > 0 ? 1 : 0)
+        for _ in 0..<emptyStarCount {
+            let imageAttachment = NSTextAttachment(image: UIImage(systemName: "star")!)
+            imageAttachment.bounds = .init(x: 0, y: -2, width: 14, height: 14)
+            attributeString.append(NSAttributedString(attachment: imageAttachment))
+        }
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 1
+        let numberString: String
+        if count > 9999 {
+            let number = Double(count) / 10000.0
+            numberString = "\(formatter.string(from: NSNumber(value: number))!)만"
+        } else if count > 999 {
+            let number = Double(count) / 1000.0
+            numberString = "\(formatter.string(from: NSNumber(value: number))!)천"
+        } else {
+            numberString = "\(count)"
+        }
+        
+        attributeString.append(NSAttributedString(string: " \(numberString)"))
+        return attributeString
+    }
+    func makeDeveloperLabel(artistName : String) -> NSMutableAttributedString{
+        let attributeString = NSMutableAttributedString(string: "")
+        let imageAttachment = NSTextAttachment(image: UIImage(systemName: "person.crop.square")!)
+        imageAttachment.bounds = .init(x: 0, y: -2, width: 15, height: 14)
+        attributeString.append(NSAttributedString(attachment: imageAttachment))
+        attributeString.append(NSAttributedString(string: " \(artistName)"))
+        return attributeString
     }
 }
 
+
 extension SearchBigCell : UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return data?.screenshotUrls.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -13,7 +13,7 @@ class TabController: UITabBarController {
         super.viewDidLoad()
         self.setupTabs()
         self.tabBar.isTranslucent = true
-        self.tabBar.backgroundColor = .systemBackground
+        self.tabBar.backgroundColor = .clear
         
     }
     
@@ -36,6 +36,10 @@ class TabController: UITabBarController {
         
         nav.viewControllers.first?.navigationItem.title = title
         nav.navigationBar.prefersLargeTitles = true
+        nav.navigationBar.isTranslucent = true
+
+        nav.navigationItem.largeTitleDisplayMode = .always
+
         nav.viewControllers.first?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.crop.circle"), style: .plain, target: self, action: nil)
         
         return nav

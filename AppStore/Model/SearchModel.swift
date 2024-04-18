@@ -23,7 +23,7 @@ class SearchModel {
                 do{
                     let newSearchResult = try JSONDecoder().decode(SearchResult.self, from: data!)
                     SearchResult.data = newSearchResult.results
-                    DispatchQueue.main.async {
+                    DispatchQueue.main.async {            
                         self.delegate?.dataRetrived()
                     }
                 }catch let error {

@@ -25,8 +25,8 @@ struct App : Codable {
     let artistName: String
     
     // ReleaseNote
-    let releaseNotes: String
-    let version: String
+    let releaseNotes: String?
+    let version: String?
     
     // ScreenShots
     let screenshotUrls: [String]
@@ -36,10 +36,9 @@ struct App : Codable {
     let artistViewUrl: String
     
     let primaryGenreName: String
-    let price: Double
     let fileSizeBytes: String
     let sellerUrl: String?
-    let formattedPrice: String
+    let formattedPrice: String?
     let minimumOsVersion: String
     
     enum CodingKeys : String, CodingKey{
@@ -57,7 +56,6 @@ struct App : Codable {
         case description
         case artistViewUrl
         case primaryGenreName
-        case price
         case fileSizeBytes
         case sellerUrl
         case formattedPrice
